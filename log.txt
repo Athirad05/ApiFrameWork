@@ -1,0 +1,116 @@
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "accuracy": 80,
+    "name": "Athirad",
+    "phone_number": "9876545678",
+    "address": "pandakkal mahe",
+    "types": [
+        "mango",
+        "apple",
+        "orange"
+    ],
+    "website": "www.google.com",
+    "language": "malayalam",
+    "location": {
+        "lat": 34.1234,
+        "lng": 54.876
+    }
+}
+HTTP/1.1 200 OK
+Date: Wed, 03 Aug 2022 08:50:27 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "738a684cac9abcdd1c158d3896f5e918",
+    "scope": "APP",
+    "reference": "86fed8a754e8a88b9a644178064e208286fed8a754e8a88b9a644178064e2082",
+    "id": "86fed8a754e8a88b9a644178064e2082"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=738a684cac9abcdd1c158d3896f5e918
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=738a684cac9abcdd1c158d3896f5e918
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 03 Aug 2022 08:50:28 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 223
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "34.1234",
+        "longitude": "54.876"
+    },
+    "accuracy": "80",
+    "name": "Athirad",
+    "phone_number": "9876545678",
+    "address": "pandakkal mahe",
+    "types": "mango,apple,orange",
+    "website": "www.google.com",
+    "language": "malayalam"
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "place_id": "null"
+}
+HTTP/1.1 404 Not Found
+Date: Wed, 03 Aug 2022 08:50:29 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 69
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "msg": "Delete operation failed, looks like the data doesn't exists"
+}
